@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Top 10 Jogos</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+    body {
+      margin: 0;
+      background-color: #1a1a2e;
+      font-family: 'Poppins', sans-serif;
+      color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 900px;
+      background: rgba(20, 20, 40, 0.85);
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+      padding: 2rem 3rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      border-bottom: 2px solid #44d7b6;
+      padding-bottom: 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 600;
+      font-size: 2.75rem;
+      letter-spacing: 2px;
+      color: #d1fcf4;
+      text-shadow: 0 0 10px #6df3d1;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-weight: 300;
+      font-size: 1.2rem;
+      color: #b8f0e7;
+    }
+
+    .game-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .game-item {
+      display: flex;
+      margin-bottom: 2rem;
+      gap: 1.8rem;
+      align-items: center;
+      background: rgba(255 255 255 / 0.1);
+      border-radius: 12px;
+      padding: 1rem 1.8rem;
+      transition: background 0.3s ease;
+      box-shadow: 0 4px 15px rgb(0 0 0 / 0.45);
+    }
+
+    .game-item:hover {
+      background: rgba(255 255 255 / 0.2);
+      box-shadow: 0 8px 24px rgb(68 215 182 / 0.85);
+    }
+
+    .game-rank {
+      font-size: 2.2rem;
+      font-weight: 600;
+      width: 3.2rem;
+      color: #44d7b6;
+      flex-shrink: 0;
+      text-align: center;
+      user-select: none;
+      text-shadow: 0 0 8px #4ce5c2;
+    }
+
+    .game-image {
+      flex-shrink: 0;
+      width: 96px;
+      height: 96px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 2px 12px rgb(0 0 0 / 0.7);
+      border: 2px solid #44d7b6;
+      background: #0e4930;
+    }
+
+    .game-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .game-title {
+      font-weight: 600;
+      font-size: 1.4rem;
+      margin-bottom: 0.3rem;
+      color: #b2fff9;
+      text-shadow: 0 0 6px #59e7d8;
+    }
+
+    .game-desc {
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.4;
+      color: #a8e7dc;
+      user-select: text;
+    }
+
+    @media (max-width: 600px) {
+      .game-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+      }
+      .game-image {
+        width: 100%;
+        height: auto;
+        max-height: 180px;
+        border-radius: 16px;
+      }
+      .game-rank {
+        width: auto;
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <header>
+      <h1>Top 10 Jogos</h1>
+      <p>Os melhores jogos de todos os tempos</p>
+    </header>
+    <ul class="game-list">
+      <li class="game-item">
+        <div class="game-rank">1</div>
+        <img class="game-image" src="https://geekireland.com/wp-content/uploads/2019/03/Zelda-II-The-Adventure-of-Link-1024x576.png" alt="The Legend of Zelda: Ocarina of Time" />
+        <div class="game-info">
+          <h2 class="game-title">The Legend of Zelda: Ocarina of Time (1998)</h2>
+          <p class="game-desc">Aventura épica que definiu o gênero de ação e exploração em mundo aberto.</p>
+        </div>
+      </li>
+      <li class="game-item">
+        <div class="game-rank">2</div>
+        <img class="game-image" src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg" alt="The Witcher 3: Wild Hunt" />
+        <div class="game-info">
+          <h2 class="game-title">The Witcher 3: Wild Hunt (2015)</h2>
+          <p class="game-desc">RPG imersivo com narrativa profunda e mundo aberto detalhado e vasto.</p>
+        </div>
+      </li>
+      <li class="game-item">
+        <div class="game-rank">3</div>
+        <img class="game-image" src="https://cdn.cloudflare.steamstatic.com/steam/apps/374320/header.jpg" alt="Dark Souls III" />
+        <div class="game-info">
+          <h2 class="game-title">Dark Souls III (2016)</h2>
+          <p class="game-desc">Desafio intenso e atmosfera sombria em um RPG de ação conceituado.</p>
+        </div>
+      </li>
+      <li class="game-item">
+        <div class="game-rank">4</div>
+        <img class="game-image" src="https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg" alt="Portal 2" />
+        <div class="game-info">
+          <h2 class="game-title">Portal 2 (2011)</h2>
+          <p class="game-desc">Quebra-cabeças inteligentes com humor e narrativa criativa em mundo futurista.</p>
+        </div>
+      </li>
+      <li class="game-item">
+        <div class="game-rank">5</div>
+        <img class="game-image" src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" alt="Grand Theft Auto V" />
+        <div class="game-info">
+          <h2 class="game-title">Grand Theft Auto V (2013)</h2>
+          <p class="game-desc">Ação e liberdade numa cidade viva repleta de missões e aventuras.</p>
+        </div>
+      </li>
+      <li class="game-item">
+        <div class="game-rank">6</div>
+        <img class="game-image" src="https://image.api.playstation.com/vulcan/ap/rnd/202407/1020/91fe046f742042e3b31e57f7731dbe2226e1fd1e02a36223.jpg" alt="Minecraft" />
+        <div class="game-info">
+          <h2 class="game-title">Minecraft (2011)</h2>
+          <p class="game-desc">Construção criativa e aventura em um mundo aberto ilimitado e pixelado.</p>
+        </div>
+      </li>
+      <li class="game-item">
+        <div class="game-rank">7</div>
+        <img class="game-image" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg" alt="Red Dead Redemption 2" />
+        <div class="game-info">
+          <h2 class="game-title">Red Dead Redemption 2 (2018)</h2>
+          <p class="game-desc">Western imersivo com narrativa emocionante e mundo aberto detalhado.</p>
+        </div>
+      </li>
+      <li class="game-item">
+        <div class="game-rank">8</div>
+        <img class="game-image" src="https://cdn.cloudflare.steamstatic.com/steam/apps/489830/header.jpg" alt="The Elder Scrolls V: Skyrim" />
+        <div class="game-info">
+          <h2 class="game-title">The Elder Scrolls V: Skyrim (2011)</h2>
+          <p class="game-desc">RPG de fantasia aberto com liberdade imensa e muitas quests para explorar.</p>
+        </div>
+      </li>
+      <li class="game-item">
+        <div class="game-rank">9</div>
+        <img class="game-image" src="https://cdn.cloudflare.steamstatic.com/steam/apps/8870/header.jpg" alt="BioShock Infinite" />
+        <div class="game-info">
+          <h2 class="game-title">BioShock Infinite (2013)</h2>
+          <p class="game-desc">Tiroteio em primeira pessoa com trama envolvente e cenário fantástico.</p>
+        </div>
+      </li>
+      <li class="game-item">
+        <div class="game-rank">10</div>
+        <img class="game-image" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1064221/capsule_616x353.jpg?t=1634231276" alt="Halo: Combat Evolved" />
+        <div class="game-info">
+          <h2 class="game-title">Halo: Combat Evolved (2001)</h2>
+          <p class="game-desc">FPS revolucionário que definiu o gênero em consoles com multiplayer marcante.</p>
+        </div>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
+
+
